@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(./img/matthew-moloney-xs9XK3-cmNg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.title{
+    display: flex;
+    position: absolute;
+    align-self: center;
+    top: 10px;
+    color: white;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+.o {
+    position: relative;
+}
+
+.o::after {
+    content: "\1F6E1";
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.x {
+    position: relative;
+}
+
+.x::after {
+    content: "\2694";
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.gameOverDisplay {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: black;
+    opacity: 0.9;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+h3 {
+    position: relative;
+    font-size: 1.5rem;
+    display: flex;
+    color: white;
+    margin: 1%;
+}
+
+.btn,.btn2 {
+    font-size: 1rem;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    border: solid white;
+}
+
+.btn,.btn2:hover {
+    padding: 12px;
+    background-color: green;
+    cursor: pointer;
+
+}
+
+.btn2{
+    align-self: center;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 0.7rem;
+}
+
+.placar{
+display: flex;
+width: 40%;
+justify-content: space-between;
+position:absolute;
+top: 70px;
+align-self: center;
+}
+
+.placar1,.placar2{
+    border: white solid;
+    width: 50px;
+    height: 60px;
+    background-color: beige;
+    font-size: 2.5rem;
+}
